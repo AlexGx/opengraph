@@ -45,6 +45,13 @@ class Video extends ElementBase
     public $height;
 
     /**
+     * The URL of a video resource associated with the embedded object.
+     *
+     * @var string
+     */
+    public $iframe;
+    
+    /**
      * @param   string      $url            URL to the video.
      */
     public function __construct($url)
@@ -82,6 +89,10 @@ class Video extends ElementBase
 
         if ($this->width !== null) {
             $properties[] = new Property(Property::VIDEO_WIDTH, $this->width);
+        }
+
+        if ($this->iframe !== null) {
+            $properties[] = new Property(Property::VIDEO_IFRAME, $this->iframe);
         }
 
         return $properties;
