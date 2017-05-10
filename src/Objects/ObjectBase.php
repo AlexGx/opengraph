@@ -219,6 +219,7 @@ abstract class ObjectBase
                 case Property::VIDEO_SECURE_URL:
                 case Property::VIDEO_TYPE:
                 case Property::VIDEO_WIDTH:
+                case Property::VIDEO_IFRAME:
                     if (count($this->videos) > 0) {
                         $this->handleVideoAttribute($this->videos[count($this->videos) - 1], $name, $value);
                     } elseif ($debug) {
