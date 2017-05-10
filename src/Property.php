@@ -35,6 +35,7 @@ class Property
     const VIDEO_TYPE = "og:video:type";
     const VIDEO_URL = "og:video:url";
     const VIDEO_WIDTH = "og:video:width";
+    const VIDEO_IFRAME = "og:video:iframe";
 
     /**
      * Key of the property without "og:" prefix.
