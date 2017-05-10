@@ -271,6 +271,9 @@ abstract class ObjectBase
             case Property::VIDEO_SECURE_URL:
                 $element->secureUrl = $value;
                 break;
+            case Property::VIDEO_IFRAME:
+                $element->iframe = $value;
+                break;
         }
     }
 
